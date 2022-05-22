@@ -1,0 +1,134 @@
+
+#about{
+  padding: 2rem 0 0 0;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+  padding: 0 0 2rem 0;
+}
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 0.2rem;
+  background: linear-gradient(
+    45deg, 
+    transparent, 
+    var(--color-primary), 
+    transparent);
+  display: grid;
+  place-items: center;
+}
+
+.about__me-image {
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.about__content {
+  display: flex;
+  align-items : center;
+}
+
+
+/* EXPERIENCE */
+
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.experience__container > div {
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 1.5rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.experience__container > div:hover {
+  background: var(--color-primary);
+}
+
+.experience__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary-variant)
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+}
+
+.experience__details{
+  display: flex;
+  gap: 1rem;
+}
+
+.experience__details-icon {
+  margin-top: 6px;
+  color: var(--color-primary-variant);
+}
+
+
+/* MEDIUM */
+
+@media screen and (max-width: 1024px){
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+
+  .about__content p {
+    margin: 1rem 1.2rem 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience__container > div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}
+
+/* SMALL */
+
+@media screen and (max-width: 600px){
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .experience__container {
+    gap: 1rem;
+  }
+  
+  .experience__container > div {
+    width: 95%;
+    padding: 2rem 1rem;
+  }
+}
