@@ -12,6 +12,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-size: 1.5rem;
 }
 
 .app__navbar-links {
@@ -23,6 +24,7 @@
 
 .app__navbar-links li {
   margin: 0 1rem;
+  font-size: 1.2rem;
 }
 
 .app__navbar-sm{
@@ -54,7 +56,7 @@
 
 .app__navbar-sm_links li {
   margin: 2rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
 } 
 
@@ -71,5 +73,9 @@
 @media screen and (max-width: 650px) {
     .app__navbar {
         padding: 1rem;
+    }
+
+    .app__navbar-logo{
+        font-size: 1.2rem;
     }
 }

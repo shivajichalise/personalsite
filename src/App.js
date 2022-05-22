@@ -1,14 +1,14 @@
 import React from 'react'
 
-import {Header, Navbar, About, Portfolio, Contacts, Footer} from './components'
+import {Header, Navbar, About, Works, Contacts, Footer} from './components'
 
 const App = () => {
   return (
     <>
-      <Header />
       <Navbar />
+      <Header />
       <About />
-      <Portfolio />
+      <Works />
       <Contacts />
       <Footer />
     </>
