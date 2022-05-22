@@ -1,5 +1,5 @@
 import React from 'react'
-import {images} from '../../constants'
+import {works} from '../../constants'
 import './Works.css'
 
 const Works = () => {
@@ -9,26 +9,22 @@ const Works = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={images.raysmotors} alt="Rays Motors" />
-          </div>
-          <h3> Rays Motors </h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com//shivajichalise" className="btn btn-primary" target="_blank" rel="noreferrer"> Github </a>
-            <a href="https://github.com//shivajichalise" className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={images.mirajfurniture} alt="Miraj Furniture" />
-          </div>
-          <h3>Miraj Furniture</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com//shivajichalise" className="btn btn-primary" target="_blank" rel="noreferrer"> Github </a>
-            <a href="https://github.com//shivajichalise" className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a>
-          </div>
-        </article>
+        {
+          works.map(({id, image, title, github, demo}) => {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3> {title} </h3>
+                <div className="portfolio__item-cta">
+                  <a href={github} className="btn btn-primary" target="_blank" rel="noreferrer"> Github </a>
+                  <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a>
+                </div>
+              </article>
+            )
+          })
+        }
       </div>
 
     </section>
