@@ -1,0 +1,75 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-bg);
+
+  padding: 1rem 6rem;
+}
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+} 
+
+.app__navbar-links li {
+  margin: 0 1rem;
+}
+
+.app__navbar-sm{
+  display: none;
+}
+
+.app__navbar-sm_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-bg);
+  transition: var(--transition);
+
+  flex-direction: column;
+  z-index: 5;
+}
+
+.app__navbar-sm_overlay .overlay__close{
+  font-size: 27px;
+  color: var(--color-primary);
+  cursor: pointer;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.app__navbar-sm_links li {
+  margin: 2rem;
+  font-size: 2rem;
+  text-align: center;
+} 
+
+@media screen and (max-width: 1150px) {
+    .app__navbar-links {
+        display: none;
+    }
+
+    .app__navbar-sm {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        padding: 1rem;
+    }
+}
