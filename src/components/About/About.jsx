@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import myPicture from '../../assets/portrait.png'
+import {images} from '../../constants'
 import {HiCheckCircle} from 'react-icons/hi'
 
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={myPicture} alt="Shivaji Chalise" />
+            <img src={images.portrait} alt="Shivaji Chalise" />
           </div>
         </div>
         <div className="about__content">
