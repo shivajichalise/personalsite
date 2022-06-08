@@ -29,7 +29,7 @@ const Contacts = () => {
           <input type="email" name="email" id="" placeholder='Your Email' required />
           <input type="text" name="subject" id="" placeholder='Subject' required />
           <textarea name="message" id="" rows="6" placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+          <button type='submit' className='contact__btn'>Send Message</button>
         </form>
       </div>
     </section>

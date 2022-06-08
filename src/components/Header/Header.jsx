@@ -4,13 +4,13 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container">
         <h5>[alphajr@gideon bin]$ ./introduce</h5>
         <h2>Hello there! I'm Shivaji Chalise</h2>
 
         <HeaderSocial />
-        <a href="#contact" className="scroll__down">Scroll Down</a>
+        <a href="#contacts" className="scroll__down">Scroll Down</a>
       </div>
     </header>
   )
