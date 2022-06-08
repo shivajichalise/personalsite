@@ -1,8 +1,7 @@
 import React from 'react'
 import './Footer.css'
-import {AiFillTwitterCircle, AiFillInstagram} from 'react-icons/ai'
-import {MdFacebook} from 'react-icons/md'
-import {BsSnapchat, BsGithub} from 'react-icons/bs'
+import {AiFillInstagram} from 'react-icons/ai'
+import {BsSnapchat} from 'react-icons/bs'
 import {SiLetterboxd} from 'react-icons/si'
 
 const Footer = () => {

@@ -10,6 +10,76 @@ header {
   position: relative;
 }
 
+.header__container-content {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.commandPrompt {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  color: #d79921;
+}
+
+.hostname {
+  color: #d65d0e;
+}
+
+h4 {
+  font-family: 'Source Code Pro', monospace;
+  position: relative;
+}
+
+h4.command::before,
+h4.command::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+h4.command::before{
+  background: var(--color-bg);
+  animation: typewriter 2.5s steps(11) 1s forwards;
+}
+
+h4.command::after{
+  width: 0.4em;
+  background: var(--color-white);
+  animation: typewriter 2.5s steps(11) 1s forwards,
+  blink 350ms steps(11) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+h2.introduction {
+  opacity: 0;
+  animation: fadeIn 100ms ease 3.7s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 /* Socials */
 .header__socials {
