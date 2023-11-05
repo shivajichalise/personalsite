@@ -16,8 +16,13 @@ const Terminal = () => {
         <p className="text-sm font-thin">VIM(1)</p>
       </div>
 
-      {introduction.map(({ title, description, points }) => (
-        <Content title={title} description={description} points={points} />
+      {introduction.map(({ title, description, points }, index) => (
+        <Content
+          key={index}
+          title={title}
+          description={description}
+          points={points}
+        />
       ))}
     </div>
   );

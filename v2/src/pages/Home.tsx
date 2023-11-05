@@ -1,11 +1,13 @@
 import Navbar from "../components/Navbar";
 import Terminal from "../components/Terminal";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="bg-base-100">
+    <div>
       <Navbar />
       <Terminal />
+      <Footer />
     </div>
   );
 };
