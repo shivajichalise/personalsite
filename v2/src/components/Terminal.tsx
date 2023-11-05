@@ -11,9 +11,9 @@ const Terminal = () => {
       </div>
 
       <div className="flex justify-between my-2">
-        <h3>VIM(1)</h3>
-        <h3>General Commands Manual</h3>
-        <h3>VIM(1)</h3>
+        <h3 className="text-sm font-thin">VIM(1)</h3>
+        <h3 className="text-sm font-thin">General Commands Manual</h3>
+        <p className="text-sm font-thin">VIM(1)</p>
       </div>
 
       {introduction.map(({ title, description, points }) => (
