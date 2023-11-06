@@ -8,12 +8,7 @@ const BlogPost = () => {
   return (
     <div className="">
       <Navbar />
-      <Terminal
-        type={"blog"}
-        content={post.map((p) => (
-          <Md markdown={p} />
-        ))}
-      />
+      <Terminal type={"blog"} content={<Md markdown={post} />} />
       <Footer />
     </div>
   );

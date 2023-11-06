@@ -1,12 +1,10 @@
-const post = [
-  `## What is blockchain?`,
+const post = `
+# Blockchain:
 
-  `
-> ___Blockchain___ is a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network.
+> Blockchain is a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network.
 > It is an immutable, sequential chain of records called Blocks. They can contain transactions, files or any data you like, really. But the important thing is that they’re chained together using hashes.
-`,
 
-  `### Blockchain structure:
+#### Blockchain structure:
 
 - Consists of blocks.
 - Block consists of index, timestamp, transactions, previous_block_hash, hash and proof.
@@ -17,10 +15,8 @@ const post = [
   5. **hash**: It is a cryptographic hash of the entire block's (itself) data.
   6. **proof**: The "proof" or "proof of work value" or "nonce" is a value that miners calculate during the mining process. It represents the computational work performed to create the block and is essential for reaching consensus in a blockchain network.
 - A block can look like:
-`,
 
-  `
-~~~py
+<code language="python">
 block = {
     'index': 1,
     'timestamp': 1506057125.900785,
@@ -35,26 +31,24 @@ block = {
     'hash': "ac5b9e29e1b161e5c1fa7425e73043362938b98242cf24dba5fb0a30e26e83b2"
     'proof': 324984774000,
 }
-~~~
-`,
+</code>
 
-  `
-~~~
+<code language="python">
        Genesis                          Block 1                         Block 2                         Block n                         Block n+1
-+---------------------+         +---------------------+         +---------------------+         +---------------------+         +---------------------+
-|    Previous hash    |      +->|    Previous hash    |      +->|    Previous hash    |      +->|    Previous hash    |      +->|    Previous hash    |
-+---------------------+      |  +---------------------+      |  +---------------------+      |  +---------------------+      |  +---------------------+
-|  index: int         |      |  |  index: int         |      |  |  index: int         |      |  |  index: int         |      |  |  index: int         |
-|                     |      |  |                     |      |  |                     |      |  |                     |      |  |                     |
-|  timestamp: time()  |      |  |  timestamp: time()  |      |  |  timestamp: time()  |      |  |  timestamp: time()  |      |  |  timestamp: time()  |
-|                     +------+  |                     +------+  |                     +------+  |                     +------+  |                     |
-|  hash: SHA256       |         |  hash: SHA256       |         |  hash: SHA256       |         |  hash: SHA256       |         |  hash: SHA256       |
-|                     |         |                     |         |                     |         |                     |         |                     |
-|  transactions: []   |         |  transactions: []   |         |  transactions: []   |         |  transactions: []   |         |  transactions: []   |
-+---------------------+         +---------------------+         +---------------------+         +---------------------+         +---------------------+
-|       Proof         |         |       Proof         |         |       Proof         |         |       Proof         |         |       Proof         |
-+---------------------+         +---------------------+         +---------------------+         +---------------------+         +---------------------+
-~~~
-`,
-];
++---------------------+ +---------------------+ +---------------------+ +---------------------+ +---------------------+
+| Previous hash | +->| Previous hash | +->| Previous hash | +->| Previous hash | +->| Previous hash |
++---------------------+ | +---------------------+ | +---------------------+ | +---------------------+ | +---------------------+
+| index: int | | | index: int | | | index: int | | | index: int | | | index: int |
+| | | | | | | | | | | | | |
+| timestamp: time() | | | timestamp: time() | | | timestamp: time() | | | timestamp: time() | | | timestamp: time() |
+| +------+ | +------+ | +------+ | +------+ | |
+| hash: SHA256 | | hash: SHA256 | | hash: SHA256 | | hash: SHA256 | | hash: SHA256 |
+| | | | | | | | | |
+| transactions: [] | | transactions: [] | | transactions: [] | | transactions: [] | | transactions: [] |
++---------------------+ +---------------------+ +---------------------+ +---------------------+ +---------------------+
+| Proof | | Proof | | Proof | | Proof | | Proof |
++---------------------+ +---------------------+ +---------------------+ +---------------------+ +---------------------+
+</code>
+`;
+
 export default post;

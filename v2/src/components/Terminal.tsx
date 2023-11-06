@@ -1,7 +1,6 @@
 import Content from "../components/Content";
 
 const Terminal = ({ type, content }) => {
-  console.log(content);
   return (
     <div className="flex flex-col my-5 border-solid border-2 rounded-lg bg-primary border-black h-min p-3 text-gray-200 overflow-y-auto">
       <div className="flex space-x-2 my-2">
