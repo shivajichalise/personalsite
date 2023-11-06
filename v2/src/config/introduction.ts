@@ -2,53 +2,118 @@ const introduction = [
   {
     title: "Name",
     description: "shivajichalise - trying to be something, one line at a time",
-    points: [],
+    points: {},
   },
   {
     title: "Synopsis",
     description: "shivaji [OPTIONS]....",
-    points: [],
+    points: {},
   },
   {
     title: "Description",
     description:
       "Shivaji, a software engineering student on a mission to be a strong problem solver. He is currently experimenting with tech to figure out his jam.",
-    points: [],
+    points: {},
   },
   {
     title: "Tech Stack",
     description:
       "The tech stack outlines the programming languages, frameworks, libraries, and tools that Shivaji is familiar with.",
-    points: [
-      "PROGRAMMING LANGUAGES: JS, PHP, Python",
-      "FRAMEWORKS/LIBRARIES: Laravel, Tailwind-CSS, Bootstrap, NodeJs, Express",
-      "DATABASES: MySQL, MongoDB",
-      "TOOLS: Git, Linux",
-    ],
+    points: {
+      type: "disc",
+      data: [
+        {
+          type: "text",
+          link: "",
+          title: "PROGRAMMING LANGUAGES: JS, PHP, Python",
+          suffix: "",
+        },
+        {
+          type: "text",
+          link: "",
+          title:
+            "FRAMEWORKS/LIBRARIES: Laravel, Bootstrap, Reactjs, Tailwind-CSS, NodeJs, Express",
+          suffix: "",
+        },
+        {
+          type: "text",
+          link: "",
+          title: "DATABASES: MySQL, MongoDB",
+          suffix: "",
+        },
+        {
+          type: "text",
+          link: "",
+          title: "TOOLS: Git, Linux",
+          suffix: "",
+        },
+      ],
+    },
   },
   {
     title: "Projects",
     description: "",
-    points: [
-      "Rays Motors (https://raysmotors.com.np)",
-      "Miraj Furniture (https://mirajfurniture.con.np)",
-      "Yakeen Kapali (https://yakeenkapali.com.np)",
-    ],
+    points: {
+      type: "disc",
+      data: [
+        {
+          type: "link",
+          link: "https://raysmotors.com.np",
+          title: "Rays Motors (https://raysmotors.com.np)",
+          suffix: "",
+        },
+        {
+          type: "link",
+          link: "https://mirajfurniture.com.np",
+          title: "Miraj Furniture (https://mirajfurniture.com.np)",
+          suffix: "",
+        },
+        {
+          type: "link",
+          link: "https://yakeenkapali.com.np",
+          title: "Yakeen Kapali (https://yakeenkapali.com.np)",
+          suffix: "",
+        },
+      ],
+    },
   },
   {
     title: "Environment",
     description: "",
-    points: [
-      "Device: M1 Macbook Air.",
-      "OS: MacOS",
-      "Terminal Emulator: iTerm2",
-      "Code Editor: NeoVim",
-    ],
+    points: {
+      type: "disc",
+      data: [
+        {
+          type: "text",
+          link: "",
+          title: "Device: M1 Macbook Air",
+          suffix: "",
+        },
+        {
+          type: "text",
+          link: "",
+          title: "OS: MacOS",
+          suffix: "",
+        },
+        {
+          type: "text",
+          link: "",
+          title: "Terminal Emulator: iTerm2",
+          suffix: "",
+        },
+        {
+          type: "text",
+          link: "",
+          title: "Text Editor: NeoVim",
+          suffix: "",
+        },
+      ],
+    },
   },
   {
     title: "Exit Status",
     description: "shivaji exists 0 on success, and cries if an error occurs.",
-    points: [],
+    points: {},
   },
 ];
 

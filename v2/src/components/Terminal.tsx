@@ -1,7 +1,6 @@
 import Content from "../components/Content";
-import introduction from "../config/introduction.ts";
 
-const Terminal = () => {
+const Terminal = ({ content }) => {
   return (
     <div className="flex flex-col my-5 border-solid border-2 rounded-lg bg-primary border-black h-min p-3 text-gray-200">
       <div className="flex space-x-2 my-2">
@@ -16,7 +15,7 @@ const Terminal = () => {
         <p className="text-sm font-thin">VIM(1)</p>
       </div>
 
-      {introduction.map(({ title, description, points }, index) => (
+      {content.map(({ title, description, points }, index) => (
         <Content
           key={index}
           title={title}
