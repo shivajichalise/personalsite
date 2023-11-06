@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <Terminal content={introduction} />
+      <Terminal type={"manpage"} content={introduction} />
       <Footer />
     </div>
   );

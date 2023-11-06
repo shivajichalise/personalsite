@@ -5,9 +5,9 @@ import posts from "../config/posts.ts";
 
 const Blog = () => {
   return (
-    <div className="bg-base-100">
+    <div className="">
       <Navbar />
-      <Terminal content={posts} />
+      <Terminal type={"manpage"} content={posts} />
       <Footer />
     </div>
   );

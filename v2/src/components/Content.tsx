@@ -4,7 +4,7 @@ type ContentProps = {
   points: string[];
 };
 
-const Content = ({ title, description, points }: ContentProps) => {
+const Content = ({ title, description, points }) => {
   return (
     <div className="mt-7">
       <h1 className="text-lg font-bold uppercase">{title}</h1>
@@ -14,7 +14,11 @@ const Content = ({ title, description, points }: ContentProps) => {
       {Object.keys(points).length > 0 && points.data.length > 0 ? (
         <ul
           className={`mt-5 ml-16 ${
-            points.type == "decimal" ? "list-decimal" : "list-disc"
+            points.type == "decimal"
+              ? "list-decimal"
+              : points.type == "disc"
+              ? "list-disc"
+              : "list-none"
           }`}
         >
           {points.data.map(({ type, link, title, suffix }, index) => (
