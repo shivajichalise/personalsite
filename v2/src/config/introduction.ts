@@ -59,18 +59,21 @@ const introduction = [
         {
           type: "link",
           link: "https://raysmotors.com.np",
+          openInNewTab: true,
           title: "Rays Motors (https://raysmotors.com.np)",
           suffix: "",
         },
         {
           type: "link",
           link: "https://mirajfurniture.com.np",
+          openInNewTab: true,
           title: "Miraj Furniture (https://mirajfurniture.com.np)",
           suffix: "",
         },
         {
           type: "link",
           link: "https://yakeenkapali.com.np",
+          openInNewTab: true,
           title: "Yakeen Kapali (https://yakeenkapali.com.np)",
           suffix: "",
         },

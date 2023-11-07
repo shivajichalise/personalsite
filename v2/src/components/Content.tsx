@@ -21,20 +21,26 @@ const Content = ({ title, description, points }) => {
               : "list-none"
           }`}
         >
-          {points.data.map(({ type, link, title, suffix }, index) => (
-            <li key={index}>
-              <div className="flex flex-col my-2">
-                {type === "link" ? (
-                  <a href={link} target="_blank" className="hover:underline">
-                    {title}
-                  </a>
-                ) : (
-                  <p>{title}</p>
-                )}
-                <span className="opacity-50 text-sm">{suffix}</span>
-              </div>
-            </li>
-          ))}
+          {points.data.map(
+            ({ type, link, openInNewTab = false, title, suffix }, index) => (
+              <li key={index}>
+                <div className="flex flex-col my-2">
+                  {type === "link" ? (
+                    <a
+                      href={link}
+                      target={openInNewTab ? `_blank` : `_self`}
+                      className="hover:underline"
+                    >
+                      {title}
+                    </a>
+                  ) : (
+                    <p>{title}</p>
+                  )}
+                  <span className="opacity-50 text-sm">{suffix}</span>
+                </div>
+              </li>
+            ),
+          )}
         </ul>
       ) : null}
     </div>
