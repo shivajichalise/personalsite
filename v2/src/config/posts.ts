@@ -1,4 +1,6 @@
-const posts = [
+import ContentProps from "../types/ContentProps";
+
+const posts: ContentProps[] = [
   {
     title: "Posts",
     description: "",

@@ -1,6 +1,8 @@
 import Content from "../components/Content";
+import ContentProps from "../types/ContentProps.ts";
+import TerminalProps from "../types/TerminalProps.ts";
 
-const Terminal = ({ type, content }) => {
+const Terminal = ({ type, content }: TerminalProps) => {
   return (
     <div className="flex flex-col my-5 border-solid border-2 rounded-lg bg-primary border-black h-min p-3 text-gray-200 overflow-y-auto">
       <div className="flex space-x-2 my-2">
@@ -16,14 +18,16 @@ const Terminal = ({ type, content }) => {
       </div>
 
       {type === "manpage" ? (
-        content.map(({ title, description, points }, index) => (
-          <Content
-            key={index}
-            title={title}
-            description={description}
-            points={points}
-          />
-        ))
+        content.map(
+          ({ title, description, points }: ContentProps, index: number) => (
+            <Content
+              key={index}
+              title={title}
+              description={description}
+              points={points}
+            />
+          ),
+        )
       ) : (
         <div className="mx-2">{content}</div>
       )}

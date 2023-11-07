@@ -1,17 +1,13 @@
-type ContentProps = {
-  title: string;
-  description: string;
-  points: string[];
-};
+import ContentProps from "../types/ContentProps.ts";
 
-const Content = ({ title, description, points }) => {
+const Content = ({ title, description, points }: ContentProps) => {
   return (
     <div className="mt-7">
       <h1 className="text-lg font-bold uppercase">{title}</h1>
 
       {description ? <p className="mt-2 ml-12">{description}</p> : null}
 
-      {Object.keys(points).length > 0 && points.data.length > 0 ? (
+      {points && Object.keys(points).length > 0 && points.data.length > 0 ? (
         <ul
           className={`mt-5 ml-16 ${
             points.type == "decimal"
