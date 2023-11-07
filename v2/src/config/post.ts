@@ -35,19 +35,19 @@ block = {
 
 <code language="python">
        Genesis                          Block 1                         Block 2                         Block n                         Block n+1
-+---------------------+ +---------------------+ +---------------------+ +---------------------+ +---------------------+
-| Previous hash | +->| Previous hash | +->| Previous hash | +->| Previous hash | +->| Previous hash |
-+---------------------+ | +---------------------+ | +---------------------+ | +---------------------+ | +---------------------+
-| index: int | | | index: int | | | index: int | | | index: int | | | index: int |
-| | | | | | | | | | | | | |
-| timestamp: time() | | | timestamp: time() | | | timestamp: time() | | | timestamp: time() | | | timestamp: time() |
-| +------+ | +------+ | +------+ | +------+ | |
-| hash: SHA256 | | hash: SHA256 | | hash: SHA256 | | hash: SHA256 | | hash: SHA256 |
-| | | | | | | | | |
-| transactions: [] | | transactions: [] | | transactions: [] | | transactions: [] | | transactions: [] |
-+---------------------+ +---------------------+ +---------------------+ +---------------------+ +---------------------+
-| Proof | | Proof | | Proof | | Proof | | Proof |
-+---------------------+ +---------------------+ +---------------------+ +---------------------+ +---------------------+
++---------------------+         +---------------------+         +---------------------+         +---------------------+         +---------------------+
+|    Previous hash    |      +->|    Previous hash    |      +->|    Previous hash    |      +->|    Previous hash    |      +->|    Previous hash    |
++---------------------+      |  +---------------------+      |  +---------------------+      |  +---------------------+      |  +---------------------+
+|  index: int         |      |  |  index: int         |      |  |  index: int         |      |  |  index: int         |      |  |  index: int         |
+|                     |      |  |                     |      |  |                     |      |  |                     |      |  |                     |
+|  timestamp: time()  |      |  |  timestamp: time()  |      |  |  timestamp: time()  |      |  |  timestamp: time()  |      |  |  timestamp: time()  |
+|                     +------+  |                     +------+  |                     +------+  |                     +------+  |                     |
+|  hash: SHA256       |         |  hash: SHA256       |         |  hash: SHA256       |         |  hash: SHA256       |         |  hash: SHA256       |
+|                     |         |                     |         |                     |         |                     |         |                     |
+|  transactions: []   |         |  transactions: []   |         |  transactions: []   |         |  transactions: []   |         |  transactions: []   |
++---------------------+         +---------------------+         +---------------------+         +---------------------+         +---------------------+
+|       Proof         |         |       Proof         |         |       Proof         |         |       Proof         |         |       Proof         |
++---------------------+         +---------------------+         +---------------------+         +---------------------+         +---------------------+
 </code>
 `;
 
