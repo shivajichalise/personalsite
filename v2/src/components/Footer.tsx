@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-base-300 rounded-lg">
@@ -6,7 +8,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} shivajichalise.
         </h1>
         <div className="grid grid-cols-2 gap-3">
-          <a href="https://github.com/shivajichalise" target="_blank">
+          <Link to="https://github.com/shivajichalise" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-github-filled text-primary"
@@ -26,10 +28,10 @@ const Footer = () => {
                 fill="currentColor"
               ></path>
             </svg>
-          </a>
+          </Link>
 
-          <a
-            href="https://www.youtube.com/channel/UCqE0hGR31rln3XShQa6NGFA?sub_confirmation=1"
+          <Link
+            to="https://www.youtube.com/channel/UCqE0hGR31rln3XShQa6NGFA?sub_confirmation=1"
             target="_blank"
           >
             <svg
@@ -51,7 +53,7 @@ const Footer = () => {
                 fill="currentColor"
               ></path>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

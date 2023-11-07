@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ContentProps from "../types/ContentProps.ts";
 
 const Content = ({ title, description, points }: ContentProps) => {
@@ -22,13 +23,13 @@ const Content = ({ title, description, points }: ContentProps) => {
               <li key={index}>
                 <div className="flex flex-col my-2">
                   {type === "link" ? (
-                    <a
-                      href={link}
+                    <Link
+                      to={link}
                       target={openInNewTab ? `_blank` : `_self`}
                       className="hover:underline"
                     >
                       {title}
-                    </a>
+                    </Link>
                   ) : (
                     <p>{title}</p>
                   )}
