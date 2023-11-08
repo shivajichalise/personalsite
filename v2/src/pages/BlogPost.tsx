@@ -19,6 +19,12 @@ const BlogPost = () => {
           .then((response) => response.text())
           .then((response) => setPost(response)),
       );
+    } else {
+      import(`../assets/markdowns/not-found.md`).then((res) =>
+        fetch(res.default)
+          .then((response) => response.text())
+          .then((response) => setPost(response)),
+      );
     }
   }, []);
 
