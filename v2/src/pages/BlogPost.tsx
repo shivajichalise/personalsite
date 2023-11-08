@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Terminal from "../components/Terminal";
 import Footer from "../components/Footer";
 import Md from "../components/Md";
-import { useParams } from "react-router-dom";
 import blogMetadata from "../assets/blogMetadata.json";
 
 const BlogPost = () => {
