@@ -12,7 +12,7 @@ const App = () => {
 
         <Route path="/blog">
           <Route index element={<Blog />} />
-          <Route path=":id" element={<BlogPost />} />
+          <Route path=":markdown" element={<BlogPost />} />
         </Route>
       </Routes>
     </div>

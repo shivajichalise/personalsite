@@ -14,7 +14,7 @@ const Blog = () => {
       .then((data) => {
         const combinedData = data.map((d) => ({
           type: "link",
-          link: d.markdownLink,
+          link: d.markdown,
           openInNewTab: false,
           title: d.title,
           suffix: `${d.created_at} - ${d.category}`,

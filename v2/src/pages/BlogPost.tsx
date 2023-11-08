@@ -1,10 +1,27 @@
+import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Terminal from "../components/Terminal";
 import Footer from "../components/Footer";
-import post from "../config/post.ts";
 import Md from "../components/Md";
+import { useParams } from "react-router-dom";
+import blogMetadata from "../assets/blogMetadata.json";
 
 const BlogPost = () => {
+  const { markdown } = useParams();
+  const [post, setPost] = useState("");
+
+  const hasPost = blogMetadata.some((item) => item.markdown === markdown);
+
+  useEffect(() => {
+    if (hasPost) {
+      import(`../assets/markdowns/${markdown}.md`).then((res) =>
+        fetch(res.default)
+          .then((response) => response.text())
+          .then((response) => setPost(response)),
+      );
+    }
+  }, []);
+
   return (
     <div className="">
       <Navbar />
